@@ -45,14 +45,14 @@ export default function InternationalOnline() {
 
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
-      case "Online Competition":
-        setCategoryPrice("75 USD");
+      case "Indonesia International IoT Olympiad - Online Competition":
+        setCategoryPrice("$75 USD");
         break;
-      case "Online Competition + Certificate and Medal (SOUTH EAST ASIA ONLY)":
-        setCategoryPrice("200 USD");
+      case "Indonesia International IoT Olympiad - Online Competition + Certificate and Medal (SOUTH EAST ASIA ONLY)":
+        setCategoryPrice("$200 USD");
         break;
-      case "Online Competition + Certificate and Medal (Exclude SOUTH EAST ASIA)":
-        setCategoryPrice("250 USD");
+      case "Indonesia International IoT Olympiad - Online Competition + Certificate and Medal (Exclude SOUTH EAST ASIA)":
+        setCategoryPrice("$250 USD");
         break;
       default:
         setCategoryPrice("");
@@ -249,14 +249,14 @@ export default function InternationalOnline() {
                     onChange={handleCategoryChange}
                   >
                     <option value="">--Choose Category Competition--</option>
-                    <option value="Online Competition">
+                    <option value="Indonesia International IoT Olympiad - Online Competition">
                       Online Competition
                     </option>
-                    <option value="Online Competition + Certificate and Medal (SOUTH EAST ASIA ONLY)">
+                    <option value="Indonesia International IoT Olympiad - Online Competition + Certificate and Medal (SOUTH EAST ASIA ONLY)">
                       Online Competition + Certificate and Medal (SOUTH EAST
                       ASIA)
                     </option>
-                    <option value="Online Competition + Certificate and Medal (Exclude SOUTH EAST ASIA)">
+                    <option value="Indonesia International IoT Olympiad - Online Competition + Certificate and Medal (Exclude SOUTH EAST ASIA)">
                       Online Competition + Certificate and Medal (Exclude SOUTH
                       EAST ASIA)
                     </option>

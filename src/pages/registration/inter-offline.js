@@ -45,9 +45,9 @@ export default function InternationalOffline() {
 
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
-      case "Offline Competition":
+      case "Indonesia International IoT Olympiad - Offline Competition":
         break;
-      case "Offline Competition + Full Package":
+      case "Indonesia International IoT Olympiad - Offline Competition + Full Package":
         break;
       default:
         setCategoryPrice("");
@@ -244,10 +244,10 @@ export default function InternationalOffline() {
                     onChange={handleCategoryChange}
                   >
                     <option value="">--Choose Category Competition--</option>
-                    <option value="Offline Competition">
+                    <option value="Indonesia International IoT Olympiad - Offline Competition">
                       Offline Competition
                     </option>
-                    <option value="Offline Competition + Full Package">
+                    <option value="Indonesia International IoT Olympiad - Offline Competition + Full Package">
                       Offline Competition + Full Package
                     </option>
                   </select>

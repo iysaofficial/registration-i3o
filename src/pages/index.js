@@ -23,13 +23,18 @@ export default function Home() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a href="/registration/homeindo" className="btn btn-action text-center me-lg-5">
+            <a href="/registration/homeindo" className="btn btn-action text-center me-lg-5 m-2">
               Indonesia Participant{" "}
               <i className="fa-solid fa-earth-americas"></i>
             </a>
-            <a href="/registration/homeinter" className="btn btn-action text-center me-lg-5">
+            <a href="/registration/homeinter" className="btn btn-action text-center me-lg-5 m-2">
               International Participant{" "}
               <i className="fa-solid fa-earth-americas"></i>
+            </a>
+            <br />
+            <br />
+            <a href="https://i3o.or.id/">
+              <strong>back to main website</strong>
             </a>
           </div>
         </div>

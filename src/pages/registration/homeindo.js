@@ -75,7 +75,7 @@ function HomeIndo() {
                 checked={termsAccepted}
                 onChange={(e) => setTermsAccepted(e.target.checked)}
               />
-              <label htmlFor="terms"> Saya menyetujui Syarat & Ketentuan</label>
+              <label htmlFor="terms"> Saya menyetujui Syarat & Ketentuan di atas</label>
             </div>
             <div className="modal-actions">
               <button

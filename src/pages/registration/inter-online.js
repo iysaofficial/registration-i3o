@@ -70,7 +70,7 @@ export default function InternationalOnline() {
   }, [router]);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbzdnzsf5FXM-4qtBfxWv1MxDdKJdlJPBYuyZORB8IUXUzWxKJbCsuEv9uk9gZG5ZvBldw/exec";
+    "";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -713,7 +713,7 @@ export default function InternationalOnline() {
                 </div>
               </div>
               <div class="button">
-                <input type="submit" value="SUBMIT FORM" />
+                <input type="submit" value="CLOSE" />
               </div>
             </form>
 

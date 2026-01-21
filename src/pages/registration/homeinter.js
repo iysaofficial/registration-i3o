@@ -59,7 +59,7 @@ function HomeInter() {
                 handleOpenModal("/registration/inter-offline", internationalOfflineTerms)
               }
             >
-              OfflineCompetition{" "}
+              Offline Competition{" "}
               <i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>

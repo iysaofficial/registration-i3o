@@ -62,7 +62,7 @@ function IndonesiaOnline() {
   }, [router]);
 
   const scriptURL =
-    "";
+    "https://script.google.com/macros/s/AKfycbzh7ySdrUtQ_eLaxTIBnBwX2Ihb4z6BzU9UL_KfLZVVE-kCXyDMpjWsn7yYE0iUl98X/exec";
 
     useEffect(() => {
       const form = document.forms["regist-form"];
@@ -694,7 +694,7 @@ function IndonesiaOnline() {
               {/* GENERAL INFORMATION END */}
 
               <div className="button">
-                <input type="submit" value="CLOSE" />
+                <input type="submit" value="Kirim" />
               </div>
             </form>
 

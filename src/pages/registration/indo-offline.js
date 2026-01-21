@@ -146,7 +146,7 @@ function IndonesiaOffline() {
             <br />
             <br />
             <h4 className="text-xl">
-              HALLO PESERTA I3O 2025, Mohon perhatikan informasi berikut ini
+              HALLO PESERTA I3O 2026, Mohon perhatikan informasi berikut ini
               sebelum mengisi formulir pendaftaran :
             </h4>
             <br />
@@ -635,7 +635,7 @@ function IndonesiaOffline() {
                 </div>
                 <div className="input-box">
                   <label for="INFORMATION_RESOURCES" className="form-label">
-                    Sumber Informasi Kompetisi I3O 2025
+                    Sumber Informasi Kompetisi I3O 2026
                   </label>
                   <select
                     type="text"

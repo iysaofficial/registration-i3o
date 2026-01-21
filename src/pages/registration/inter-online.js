@@ -157,7 +157,7 @@ export default function InternationalOnline() {
             <br />
             <br />
             <h4>
-              HELLO I3O 2025 PARTICIPANTS, Please consider the following
+              HELLO I3O 2026 PARTICIPANTS, Please consider the following
               information before filling out the registration form :
             </h4>
             <br />
@@ -685,7 +685,7 @@ export default function InternationalOnline() {
 
                 <div class="input-box">
                   <label for="INFORMATION_RESOURCES" class="form-label">
-                    I3O 2025 Competition Information Resources
+                    I3O 2026 Competition Information Resources
                   </label>
                   <select
                     type="text"

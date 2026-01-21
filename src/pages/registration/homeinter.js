@@ -40,7 +40,7 @@ function HomeInter() {
                 REGISTRATION FORM FOR INTERNATIONAL PARTICIPANTS
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
-                Choose Categories Competition for Registration I3O 2025
+                Choose Categories Competition for Registration I3O 2026
               </h3>
             </div>
           </div>
@@ -48,18 +48,18 @@ function HomeInter() {
             <a
               className="btn btn-action text-center me-lg-5"
               onClick={() =>
-                handleOpenModal("", internationalOnlineTerms)
+                handleOpenModal("/registration/inter-online", internationalOnlineTerms)
               }
             >
-              Close Regist{" "}<i className="fa-solid fa-earth-americas"></i>
+              Online Competition{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
               className="btn btn-action text-center me-lg-5"
               onClick={() =>
-                handleOpenModal("", internationalOfflineTerms)
+                handleOpenModal("/registration/inter-offline", internationalOfflineTerms)
               }
             >
-              Close Regist{" "}
+              OfflineCompetition{" "}
               <i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>

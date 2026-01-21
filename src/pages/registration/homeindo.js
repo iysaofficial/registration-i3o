@@ -41,22 +41,22 @@ function HomeIndo() {
                 FORMULIR REGISTRASI
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
-                Pilih Kategori Kompetisi untuk Registrasi I3O 2025
+                Pilih Kategori Kompetisi untuk Registrasi I3O 2026
               </h3>
             </div>
           </div>
           <div className="link-web mx-auto text-center">
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("", indonesiaOnlineTerms)}
+              onClick={() => handleOpenModal("/registration/indo-online", indonesiaOnlineTerms)}
             >
-              Close Regist{" "}<i className="fa-solid fa-earth-americas"></i>
+              Online Competition{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("", indonesiaOfflineTerms)}
+              onClick={() => handleOpenModal("/registration/indo-offline", indonesiaOfflineTerms)}
             >
-              Close Regist{" "}<i className="fa-solid fa-earth-americas"></i>
+              Offline Competition{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>

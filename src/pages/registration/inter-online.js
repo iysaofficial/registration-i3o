@@ -46,13 +46,13 @@ export default function InternationalOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "Indonesia International IoT Olympiad - Online Competition":
-        setCategoryPrice("$75 USD");
+        setCategoryPrice("$105 USD");
         break;
       case "Indonesia International IoT Olympiad - Online Competition + Certificate and Medal (SOUTH EAST ASIA ONLY)":
-        setCategoryPrice("$200 USD");
+        setCategoryPrice("$225 USD");
         break;
       case "Indonesia International IoT Olympiad - Online Competition + Certificate and Medal (Exclude SOUTH EAST ASIA)":
-        setCategoryPrice("$250 USD");
+        setCategoryPrice("$275 USD");
         break;
       default:
         setCategoryPrice("");
@@ -462,7 +462,7 @@ export default function InternationalOnline() {
                     required
                   >
                     <option value="">--Choose Your Grade--</option>
-                    <option value="Elementery">Elementery</option>
+                    <option value="Elementary">Elementary</option>
                     <option value="Junior High School">
                       Junior High School
                     </option>
@@ -578,7 +578,7 @@ export default function InternationalOnline() {
                     className="form-control"
                     required
                   >
-                    <option value="">--Pilih Kategori--</option>
+                    <option value="">--Choose Category--</option>
                     <option value="IoT in Business">IoT in Business</option>
                     <option value="IoT in Education">IoT in Education</option>
                     <option value="IoT in Healthcare">IoT in Healthcare</option>
@@ -708,7 +708,7 @@ export default function InternationalOnline() {
                     <option value="IYSA Email">IYSA Email</option>
                     <option value="I3O Email">I3O Email</option>
                     <option value="Previous Event">Previous Event</option>
-                    <option value="Others">Lainnya</option>
+                    <option value="Others">Other</option>
                   </select>
                 </div>
               </div>

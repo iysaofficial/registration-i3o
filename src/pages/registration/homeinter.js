@@ -1,34 +1,35 @@
 import { internationalOfflineTerms, internationalOnlineTerms } from "../../lib/data/terms";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function HomeInter() {
   const [showModal, setShowModal] = useState(false);
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [redirectLink, setRedirectLink] = useState("");
   const [termsContent, setTermsContent] = useState("");
+  const [hasViewedTerms, setHasViewedTerms] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const handleOpenModal = (link, terms) => {
     setRedirectLink(link); // Set link tujuan redirect
     setTermsContent(terms); // Set isi terms sesuai pilihan
+    setTermsAccepted(false); // Reset state persetujuan
+    setHasViewedTerms(false); // Reset state sudah melihat
     setShowModal(true); // Tampilkan modal
+  };
+
+  const handleViewTerms = () => {
+    window.open("https://drive.google.com/file/d/1KOtyI8EZO42INO4Q_IeiTmBQCc_8JtTl/view?usp=sharing", "_blank");
+    setHasViewedTerms(true);
   };
 
   const handleAccept = () => {
     if (termsAccepted) {
-      sessionStorage.setItem("termsAccepted", "true"); // Menyimpan status setuju di sessionStorage
       setShowModal(false);
       window.location.href = redirectLink;
     } else {
       alert("Please agree to the Terms & Conditions to proceed.");
     }
   };
-  
-  useEffect(() => {
-    const hasAcceptedTerms = sessionStorage.getItem("termsAccepted");
-    if (hasAcceptedTerms === "true") {
-      setTermsAccepted(true); // Set status sudah diterima
-    }
-  }, []);
 
   return (
     <>
@@ -70,27 +71,59 @@ function HomeInter() {
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h2 className="text-4xl">Terms & Conditions</h2>
-            <div>{termsContent}</div> {/* Isi dinamis */}
-            <div className="checkbox">
-              <input
-                type="checkbox"
-                id="terms"
-                checked={termsAccepted}
-                onChange={(e) => setTermsAccepted(e.target.checked)}
-              />
-              <label htmlFor="terms"> I agree to the Terms & Conditions</label>
+            <div className="modal-header">
+              <h2>Terms & Conditions</h2>
+              <button onClick={() => setShowModal(false)} className="modal-close-btn">&times;</button>
             </div>
-            <div className="modal-actions">
-              <button
-                className="btn btn-secondary"
-                onClick={() => setShowModal(false)}
-              >
-                Cancel
-              </button>
-              <button className="btn btn-primary" onClick={handleAccept}>
-                Accept & Proceed
-              </button>
+            <div className="modal-body">
+              {termsContent}
+              <p>
+                Please review the terms and conditions carefully before proceeding.
+              </p>
+            </div>
+            <div className="modal-footer">
+              <div className="terms-agreement">
+                <div
+                  className="checkbox-wrapper"
+                  onMouseEnter={() => !hasViewedTerms && setShowTooltip(true)}
+                  onMouseLeave={() => setShowTooltip(false)}
+                  onClick={() => !hasViewedTerms && setShowTooltip(!showTooltip)}
+                >
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    checked={termsAccepted}
+                    disabled={!hasViewedTerms}
+                    onChange={(e) => setTermsAccepted(e.target.checked)}
+                  />
+                  {showTooltip && (
+                    <div className="custom-tooltip">
+                      Please view the Terms & Conditions first
+                    </div>
+                  )}
+                </div>
+                <label htmlFor="terms">
+                  I have read and agree to the{" "}
+                  <a href="#" onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
+                    Terms & Conditions
+                  </a>.
+                </label>
+              </div>
+              <div className="modal-actions">
+                <button
+                  className="btn btn-secondary"
+                  onClick={() => setShowModal(false)}
+                >
+                  Cancel
+                </button>
+                <button
+                  className="btn btn-primary"
+                  onClick={handleAccept}
+                  disabled={!termsAccepted}
+                >
+                  Accept & Proceed
+                </button>
+              </div>
             </div>
           </div>
         </div>

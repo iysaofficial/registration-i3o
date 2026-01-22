@@ -23,7 +23,7 @@ export default function Home() {
           </div>
           <div className="link-web mx-auto text-center">
             <a className="btn btn-action text-center me-lg-5 m-2" href="/registration/homeindo">
-              Indonesia Citizen{" "}
+              Indonesian Citizen{" "}
               <i className="fa-solid fa-earth-americas"></i>
             </a>
             <a className="btn btn-action text-center me-lg-5 m-2" href="/registration/homeinter">

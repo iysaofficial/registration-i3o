@@ -105,7 +105,7 @@ export default function InternationalOffline() {
   }, [router]);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbx3WkK2m1z5xVxt72ptI05UoeYcpCq-Y-CLJ5EjHduMBXekWckdsGKaqYji11tbtGlf/exec";
+    "https://script.google.com/macros/s/AKfycbzrDhm8bXURcyKlwQdZTjxbv_89svPutrsdyebMoRnPXHgoxlsAuY1vtSa2z3nrUioS/exec";
 
     useEffect(() => {
       const form = document.forms["regist-form"];

@@ -110,7 +110,7 @@ export default function InternationalOnline() {
   }, [router]);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbzgUntjOIRmxk9M3M00CrpjJPjlS0uY2H0qlq4NNd29C7wQc0cmWr8uHcGrg9nAXwtF/exec";
+    "https://script.google.com/macros/s/AKfycbwDr9XRDdj3tNwUbYewqw10XqsJDbWW4M3oDJ6qf2xATY1KpxWCgy8Or5DgXg3HLyHT/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
